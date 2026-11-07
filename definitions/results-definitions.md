@@ -36,9 +36,9 @@ Headline figure (opening paragraph of the answer):
 ## What I read in `raw/`
 - **Condition A never answered silently.** All 15 answers listed the three statuses with their amounts, so both figures were visible in every one. What changed was the headline.
 - **The word mattered.** With "ingresos" (q1), two of three answers opened with 1,000 orders adding up to 156,987.45 and said "revenue" could mean orders or money; the third opened with the table and no headline. The completed figure came later, as "the most reliable" or "the usual reading". With "facturamos", "vendimos", and the English question, all 9 opened with 124,634.77. With "ventas totales", 2 of 3 did, and the third opened with a heading and the table.
-- **In A the agent also said what it was unsure about**, such as the missing currency or that it had not checked `amount` against `order_items`. Condition B and C answers were shorter and did not mention it.
-- **Condition B** answers cited "the project's revenue definition" and gave the completed figure first, in all 15.
-- **Condition C** answers used `revenue_orders` and said it only counts completed orders; some added that `orders` would be needed to include the rest. I did not check whether any answer queried `orders` directly.
+- **Condition A answers were longer and hedged more.** Together they run about 1,530 words, against 610 for B and 680 for C. 14 of 15 A answers say they did not use or verify `order_items`; none of the B or C answers mention it. The missing currency came up in 6 of 15 A answers, 1 of 15 B and 5 of 15 C.
+- **Condition B:** all 15 gave the completed figure first and said they counted only completed orders; 5 of 15 also said it came from the project's revenue definition.
+- **Condition C:** all 15 mention `revenue_orders` and say it only counts completed orders; some add that `orders` would be needed to include the rest. I did not check whether any answer also queried `orders` directly.
 
 ## Compared with my guess
 I expected A to do better than people assume, and it did on the figure: the model never reported a single wrong number. I expected "ventas" and the English question to be the risky ones. It was "ingresos" instead. I expected B and C to be nearly perfect; they were perfect (15 of 15 each), but A was also correct in the statuses it listed.
