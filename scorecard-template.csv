@@ -1,3 +1,0 @@
-month,stage,use_case,tier,adoption_pct_weekly_active,rework_rate,review_comments_per_pr,cycle_time_days,ai_spend,agent_bytes_scanned,incidents,near_misses,notes
-2026-01,Pilot,Test generation,1,,,,,,,,,Baseline period
-2026-02,Pilot,Test generation,1,,,,,,,,,
