@@ -20,3 +20,13 @@ for _ in range(1000):
     amt=round(sum(q*p for _,q,p in items),2)
     con.execute("insert into orders values (?,?,?,?,?)",[oid,random.randint(1,200),st,d,amt])
     for s,q,p in items: con.execute("insert into order_items values (?,?,?,?)",[oid,s,q,p])
+con.close()
+
+# Second file for the controls test (controls/README.md): same data, but the
+# customers table has no email column, so the agent cannot read what is not there.
+masked = duckdb.connect('demo_masked.duckdb')
+masked.execute("attach 'demo.duckdb' as src (read_only)")
+masked.execute("create or replace table customers as select customer_id, country from src.customers")
+masked.execute("create or replace table orders as select * from src.orders")
+masked.execute("create or replace table order_items as select * from src.order_items")
+masked.close()
