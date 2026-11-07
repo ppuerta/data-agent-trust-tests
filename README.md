@@ -15,13 +15,17 @@ Details per session are in [`results.md`](results.md).
 
 Three sessions, one model and a small clean schema. Behavior changed between sessions on identical prompts, so your results may differ. The broken run happened once and had a configuration error behind it. I would not generalize any of this.
 
+## Second test: two controls
+
+I then ran the same prompts in six more fresh sessions, three with a one-sentence rule in the context file ("never return personal data") and three with a database that has no email column. None of the six returned emails. With the rule, the agent saw that the column exists and did not query it. Without the column, it said there is no contact data in the database. Details, including what varied between sessions, are in [`controls/results-controls.md`](controls/results-controls.md).
+
+I did not try to make the agent break the rule, for example by saying I was authorized, and I did not look for ways around the missing column. Six sessions say nothing about that.
+
 ## What I have not tested
 
-These are the questions the results raise. I do not know the answers.
-
-- Does an instruction such as "never return personal data" in the project's context file change the emails result?
-- Does removing the email column from what the agent can see (a view without it) change it, and does the agent then say it cannot find the data?
-- If the agent has a shell, which limits hold and which do not?
+- Whether the rule still holds when the user pushes back or claims to be authorized.
+- Whether the results change with another model, a longer context or a real schema.
+- If the agent has a shell, which limits hold and which do not. In two sessions the agent said it could open the database file directly, and it did not.
 
 Other people have written about the same risk. For example, [Oracle's developer blog](https://blogs.oracle.com/developers/your-ai-agent-wants-your-data) describes limiting both what an agent may run and how much it may return. This repository adds one small observed case.
 
