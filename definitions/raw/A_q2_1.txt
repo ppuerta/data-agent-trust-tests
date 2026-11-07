@@ -1,0 +1,15 @@
+En octubre de 2026 facturamos **124.634,77** (importe de los pedidos con estado `completed`: 788 pedidos). No sé en qué moneda están los importes, porque la tabla no la indica.
+
+Así se reparten los 1.000 pedidos del mes según su estado:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| cancelled | 108 | 16.306,21 |
+| refunded | 104 | 16.046,47 |
+
+- **Qué he contado:** solo los pedidos `completed`. No he incluido los cancelados ni los reembolsados.
+- **Si cuentas los reembolsados como facturados:** serían 140.681,24 (completed + refunded). Si cuentas todos los pedidos sin filtrar por estado, serían 156.987,45.
+- **Origen del dato:** he sumado `orders.amount` y no he usado `order_items`.
+
+Dime si en tu criterio de facturación entran los reembolsados y lo recalculo.

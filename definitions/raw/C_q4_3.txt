@@ -1,0 +1,5 @@
+En octubre de 2026 vendimos **124.634,77** en total, repartidos en 788 pedidos.
+
+Usé la vista `revenue_orders`, que solo incluye pedidos completados. Los pedidos reembolsados y cancelados quedan fuera. Los datos cubren del 1 al 31 de octubre.
+
+Si quieres incluir los reembolsados o cancelados, puedo calcularlo desde la tabla `orders`.

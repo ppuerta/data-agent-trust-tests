@@ -1,0 +1,5 @@
+En octubre de 2026 facturaron **124.634,77** en pedidos completados (788 pedidos). No sé la moneda, porque la base de datos no la indica.
+
+Excluí los pedidos cancelados (16.306,21) y los reembolsados (16.046,47). Si cuenta como facturación bruta todo lo registrado, la cifra sube a 156.987,45 con los 1.000 pedidos.
+
+La suma sale de `orders.amount`, filtrada por `created_at` entre el 1 y el 31 de octubre. No la contrasté con `order_items`.

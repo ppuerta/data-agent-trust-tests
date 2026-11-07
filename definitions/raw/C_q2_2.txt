@@ -1,0 +1,3 @@
+En octubre de 2026 facturaron **124.634,77** en total. Son 788 pedidos, con fechas del 1 al 31 de octubre.
+
+Usé la vista `revenue_orders`, que solo cuenta los pedidos completados. Los pedidos reembolsados y cancelados quedan fuera. Si usted quiere incluirlos, tendría que consultar la tabla `orders` directamente.

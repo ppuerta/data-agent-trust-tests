@@ -1,0 +1,12 @@
+En octubre de 2026 hubo **1.000 pedidos**, que suman **156.987,45** en importe bruto.
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| cancelled | 108 | 16.306,21 |
+| refunded | 104 | 16.046,47 |
+| **Total** | **1.000** | **156.987,45** |
+
+No sé si "ingresos" se refiere a pedidos o a dinero. Si es a dinero, el dato más fiable son los pedidos `completed`: **124.634,77** (788 pedidos). Los cancelados y reembolsados no deberían contar como ingresos.
+
+Usé `orders.created_at` y `orders.amount`. No usé `order_items`.

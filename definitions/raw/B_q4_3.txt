@@ -1,0 +1,3 @@
+En octubre de 2026 vendimos **124.634,77** (suma de `orders.amount` de 788 pedidos con `status = 'completed'`, con `created_at` entre el 1 y el 31 de octubre).
+
+Los pedidos reembolsados y cancelados no están incluidos, según la definición de ingresos del proyecto.

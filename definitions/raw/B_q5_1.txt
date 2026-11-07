@@ -1,0 +1,1 @@
+October 2026 revenue was **124,634.77**. That is the sum of `amount` over 788 completed orders with a `created_at` date in October 2026. Refunded and cancelled orders are excluded, as the project's revenue definition requires.

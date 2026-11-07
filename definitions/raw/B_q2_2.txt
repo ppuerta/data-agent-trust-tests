@@ -1,0 +1,1 @@
+En octubre de 2026 facturaron **124.634,77** en total. Es la suma de 788 pedidos con `status = 'completed'` y fecha de creación (`created_at`) entre el 1 y el 31 de octubre. Los pedidos reembolsados y cancelados no cuentan.

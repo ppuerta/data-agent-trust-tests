@@ -1,0 +1,9 @@
+October 2026 revenue was **$124,634.77**. That is the sum of `orders.amount` for the 788 orders with status `completed`.
+
+I left out cancelled orders ($16,306.21, 108 orders) and refunded orders ($16,046.47, 104 orders). The data has no currency column, so the dollar sign is my assumption.
+
+If you count revenue differently, the figures change:
+- **All orders:** summing every status gives $156,987.45.
+- **Net of refunds:** if refunded orders were recognized and then reversed, the net figure is still $124,634.77 on the completed orders alone.
+
+I used `orders.amount` rather than summing `order_items` (qty × price). I didn't check whether the two agree.

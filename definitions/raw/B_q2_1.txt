@@ -1,0 +1,1 @@
+En octubre de 2026 se facturaron **124.634,77** (suma de `orders.amount` de 788 pedidos con `status = 'completed'`). La consulta excluye los pedidos reembolsados y cancelados. Usé `created_at` como fecha del pedido.

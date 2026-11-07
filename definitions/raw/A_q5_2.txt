@@ -1,0 +1,5 @@
+October 2026 revenue was **$124,634.77**. That comes from 788 completed orders, using the `amount` column in `orders`.
+
+I left out refunded orders (104 orders, $16,046.47) and cancelled orders (108 orders, $16,306.21). If you count refunds as revenue, the total with them would be $140,681.24. Counting all orders regardless of status would give $156,987.45.
+
+I didn't check whether `orders.amount` matches the sum of `qty * price` in `order_items`. I also didn't confirm the currency, so the $ sign is an assumption.

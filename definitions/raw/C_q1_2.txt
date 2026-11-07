@@ -1,0 +1,5 @@
+En octubre de 2026 hubo **788 pedidos que cuentan como ingresos**. Suman **124.634,77** en total.
+
+Usé la vista `revenue_orders`, que solo incluye los pedidos completados. Deja fuera los reembolsados y los cancelados. En ese mes se registraron 1.000 pedidos en total, así que los otros 212 quedaron excluidos por esas razones.
+
+Si con "ingresos" te referías al número de pedidos de todo tipo, la cifra sería 1.000.

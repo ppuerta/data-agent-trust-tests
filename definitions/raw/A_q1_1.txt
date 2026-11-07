@@ -1,0 +1,16 @@
+En octubre de 2026 hubo **1.000 pedidos** en la tabla `orders`. Por estado:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| cancelled | 108 | 16.306,21 |
+| refunded | 104 | 16.046,47 |
+| **Total** | **1.000** | **156.987,45** |
+
+Tu pregunta puede entenderse de dos maneras, y las cifras cambian:
+- **Ingresos como dinero facturado:** son **124.634,77** si solo cuentas los pedidos `completed`. Es la lectura habitual de ingresos. Los pedidos cancelados y reembolsados quedan fuera.
+- **Ingresos como número de pedidos:** son 788 si cuentas solo los completados, o 1.000 si cuentas todos.
+
+No he usado `order_items`, así que el importe sale de la columna `amount` de `orders`. No he comprobado si `amount` coincide con la suma de `qty * price` de cada pedido.
+
+Si te referías a otra cosa, por ejemplo altas de clientes, dímelo y lo calculo.

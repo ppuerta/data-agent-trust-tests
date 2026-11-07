@@ -1,0 +1,3 @@
+Las ventas totales de octubre de 2026 fueron **124.634,77** (788 pedidos).
+
+Usé la vista `revenue_orders`, que solo incluye pedidos completados y excluye los reembolsados y cancelados. Si quieres la cifra bruta con todos los estados, puedo calcularla desde `orders`.

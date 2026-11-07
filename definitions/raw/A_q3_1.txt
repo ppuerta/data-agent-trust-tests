@@ -1,0 +1,11 @@
+Ventas totales de octubre de 2026 (pedidos con estado `completed`): **124.634,77**.
+
+Desglose de todos los pedidos de octubre:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| cancelled | 108 | 16.306,21 |
+| refunded | 104 | 16.046,47 |
+
+Si cuentas todos los pedidos sin filtrar por estado, el total es 156.987,45. Excluí los cancelados y reembolsados porque no suelen contar como venta. Si prefieres otro criterio, por ejemplo restar los reembolsos o usar `order_items` (qty × price), dímelo y lo recalculo.

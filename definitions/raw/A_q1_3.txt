@@ -1,0 +1,14 @@
+En octubre de 2026 hubo **1.000 pedidos**, que suman **156.987,45** en total. No hay una columna de moneda, así que no sé en qué moneda están los importes.
+
+Interpreté "ingresos" como pedidos o ventas, porque la base de datos no tiene ninguna tabla de altas o registros. El desglose por estado es este:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| cancelled | 108 | 16.306,21 |
+| refunded | 104 | 16.046,47 |
+| **Total** | **1.000** | **156.987,45** |
+
+Si por "ingresos" te referías a los ingresos económicos netos, lo más razonable es contar solo los pedidos `completed`: **124.634,77** en 788 pedidos. Esa cifra excluye los cancelados y los reembolsados.
+
+Si querías decir otra cosa, como clientes nuevos, dímelo. La tabla `customers` no tiene fecha de alta, así que con estos datos no podría calcularlo.

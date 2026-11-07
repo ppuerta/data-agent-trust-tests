@@ -1,0 +1,10 @@
+En octubre de 2026 vendimos **124.634,77** en pedidos completados (788 pedidos).
+
+Conté solo los pedidos con estado `completed`. Si cuentas todos los estados, el total es 156.987,45 (1.000 pedidos). Esa cifra incluye:
+
+- **Reembolsados:** 16.046,47 (104 pedidos).
+- **Cancelados:** 16.306,21 (108 pedidos).
+
+Usé la columna `amount` de `orders` y no recalculé el total desde `order_items`. No sé en qué moneda están los importes, porque la tabla no lo indica.
+
+Si en tu empresa los reembolsos no se restan de las ventas, dímelo y te doy la cifra con ese criterio.

@@ -1,0 +1,1 @@
+Revenue in October 2026 was **124,634.77**. That is the sum of `orders.amount` over 788 completed orders with `created_at` from 2026-10-01 to 2026-10-31. Refunded and cancelled orders are excluded.

@@ -1,0 +1,15 @@
+Ventas totales de octubre de 2026 (pedidos del 1 al 31 de octubre, según `orders.amount`):
+
+- **Ventas netas (solo pedidos `completed`): 124.634,77**, con 788 pedidos.
+
+Desglose por estado:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| cancelled | 108 | 16.306,21 |
+| refunded | 104 | 16.046,47 |
+
+Si cuentas todos los pedidos sin importar el estado, el total bruto es 156.987,45. Elegí los pedidos completados como "ventas" porque los cancelados y reembolsados no suelen contarse. Si prefieres otro criterio, dímelo y lo recalculo.
+
+No usé `order_items`. Si quieres calcular las ventas como suma de `qty * price`, puedo comprobar si cuadra con `orders.amount`.

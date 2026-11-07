@@ -1,0 +1,1 @@
+Los ingresos de octubre de 2026 fueron **124.634,77**. Es la suma de `amount` de 788 pedidos con `status = 'completed'` y `created_at` entre el 1 y el 31 de octubre. No incluye los pedidos reembolsados ni los cancelados.

@@ -1,0 +1,5 @@
+En octubre de 2026 los ingresos fueron **124.634,77** (importe total), repartidos en **788 pedidos**.
+
+Usé la vista `revenue_orders`, que solo incluye pedidos completados. Excluye los pedidos reembolsados y cancelados.
+
+Si con "ingresos" te referías al número de pedidos de todo tipo, también con cancelados y reembolsados, dímelo y lo calculo.

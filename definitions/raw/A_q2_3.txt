@@ -1,0 +1,15 @@
+En octubre de 2026 facturamos **124.634,77** con los pedidos en estado `completed`. Son 788 pedidos.
+
+Estos son todos los pedidos de octubre por estado:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| cancelled | 108 | 16.306,21 |
+| refunded | 104 | 16.046,47 |
+
+- **Criterio:** excluí los cancelados y los reembolsados. Si cuentas todos los pedidos sin filtrar por estado, el total bruto sería 156.987,45.
+- **Reembolsos:** si prefieres la facturación neta de reembolsos, habría que restar los 16.046,47 de los pedidos `refunded`. Solo ocurriría si esos pedidos se hubieran contado antes como facturados.
+- **Fuente:** usé `orders.amount` filtrado por `created_at`. No lo contrasté con la suma de `order_items` (qty × price).
+
+Si tu definición de facturación es otra, dime cuál y lo recalculo.

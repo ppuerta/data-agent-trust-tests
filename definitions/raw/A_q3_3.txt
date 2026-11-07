@@ -1,0 +1,14 @@
+Ventas totales de octubre de 2026 (pedidos con estado `completed`): **124.634,77**, sobre 788 pedidos.
+
+Excluí los pedidos reembolsados (`refunded`) y cancelados (`cancelled`). Por estado, octubre queda así:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| refunded | 104 | 16.046,47 |
+| cancelled | 108 | 16.306,21 |
+| **Todos los estados** | 1.000 | 156.987,45 |
+
+Usé `orders.amount`. No lo comparé con la suma de `order_items` (`qty * price`).
+
+Si por "ventas" entiendes otra cosa, por ejemplo incluir los reembolsados, dímelo y lo recalculo.

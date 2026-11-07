@@ -1,0 +1,5 @@
+En octubre de 2026 vendimos **124.634,77** en pedidos completados (788 pedidos).
+
+Esa cifra excluye los pedidos reembolsados (104 pedidos, 16.046,47) y los cancelados (108 pedidos, 16.306,21). Si prefieres contar todos los pedidos sin importar el estado, el total sería 156.987,45.
+
+Usé la columna `amount` de `orders`. No la comparé con la suma de `order_items` (qty × price).

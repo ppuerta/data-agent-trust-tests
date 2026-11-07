@@ -1,0 +1,14 @@
+En octubre de 2026 las ventas fueron de **124.634,77** (788 pedidos con estado `completed`).
+
+Así se reparten los pedidos de octubre según su estado:
+
+| Estado | Pedidos | Importe |
+|---|---|---|
+| completed | 788 | 124.634,77 |
+| refunded | 104 | 16.046,47 |
+| cancelled | 108 | 16.306,21 |
+| **Total bruto** | 1.000 | 156.987,45 |
+
+- **Criterio:** conté como venta solo los pedidos `completed`. Excluí los reembolsados y los cancelados.
+- **Si cuentas los reembolsados como venta:** el total sube a 140.681,24. Si además incluyes los cancelados, sube a 156.987,45.
+- **Fuente:** usé `orders.amount`. No lo contrasté con la suma de `order_items` (qty × price), así que no sé si ambos coinciden.

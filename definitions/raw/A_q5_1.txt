@@ -1,0 +1,5 @@
+October 2026 revenue was **$124,634.77**. That comes from 788 completed orders, summed from `orders.amount`.
+
+I left out refunded orders (104 orders, $16,046.47) and cancelled orders (108 orders, $16,306.21). If you count all orders regardless of status, the total is $156,987.45.
+
+I used the order-level `amount` and didn't check it against the `order_items` line totals. I can do that check if you want.

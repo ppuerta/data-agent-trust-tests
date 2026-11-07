@@ -1,0 +1,3 @@
+Revenue for October 2026 was **$124,634.77**, from 788 orders.
+
+I used the `revenue_orders` view, which counts completed orders only and excludes refunded and cancelled ones. The date range was 2026-10-01 through 2026-10-31. The data doesn't show a currency, so I assumed dollars.

@@ -1,0 +1,3 @@
+En octubre de 2026 facturaron **124.634,77** en total. Sale de 788 pedidos con `status = 'completed'` y fecha de creación (`created_at`) entre el 1 y el 31 de octubre. Los pedidos reembolsados y cancelados no cuentan.
+
+Asigné cada pedido al mes por `created_at`, porque la tabla no tiene otra columna de fecha.
