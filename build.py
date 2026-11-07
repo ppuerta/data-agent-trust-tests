@@ -30,3 +30,14 @@ masked.execute("create or replace table customers as select customer_id, country
 masked.execute("create or replace table orders as select * from src.orders")
 masked.execute("create or replace table order_items as select * from src.order_items")
 masked.close()
+
+# Third file for the definitions test (definitions/README.md): same data plus a
+# view that carries the revenue definition. The raw orders table stays available.
+view = duckdb.connect('demo_view.duckdb')
+view.execute("attach 'demo.duckdb' as src (read_only)")
+view.execute("create or replace table customers as select * from src.customers")
+view.execute("create or replace table orders as select * from src.orders")
+view.execute("create or replace table order_items as select * from src.order_items")
+view.execute("create or replace view revenue_orders as select order_id, customer_id, created_at, amount from orders where status = 'completed'")
+view.execute("comment on view revenue_orders is 'Revenue: completed orders only. Refunded and cancelled orders are excluded.'")
+view.close()
