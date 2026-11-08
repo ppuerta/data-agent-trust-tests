@@ -1,4 +1,16 @@
-# What a read-only MCP connection does and does not protect
+# What an AI agent does with your data when nobody gave it rules
+
+Three small, repeatable tests of Claude Code connected to a fictional DuckDB database through a read-only MCP server. Each one has its data, prompts and per-session results.
+
+| Test | Question | Where |
+|---|---|---|
+| 1. Read-only | Does a read-only connection stop an agent from returning customer emails? | this page, [`results.md`](results.md) |
+| 2. Controls | Does a rule in the context file, or removing the column, change that? Does claiming authorization? | [`controls/`](controls/) |
+| 3. Definitions | Does the same revenue question get the same figure in five phrasings, with and without a definition? | [`definitions/`](definitions/) |
+
+The code and the text were written with Claude Code. I ran every session reported here myself, and I did not edit the answers.
+
+## Test 1: what a read-only MCP connection does and does not protect
 
 A small test you can repeat. I connected Claude Code to a fictional DuckDB database through an MCP server in read-only mode, asked three questions, and recorded what it did. I ran it in three fresh sessions.
 
